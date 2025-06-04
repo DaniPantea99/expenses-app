@@ -59,7 +59,7 @@ const ExpenseForm = (props) => {
   return (
     <form onSubmit={submitHandler}>
       {toggle ? (
-        <button onClick={() => setToggle(false)}>Add new expense</button>
+        <button type="button" onClick={() => setToggle(false)}>Add new expense</button>
       ) : (
         <div>
           <div className="new-expense__controls">
@@ -96,7 +96,7 @@ const ExpenseForm = (props) => {
             </div>
           </div>
           <div className="new-expense__actions">
-            <button onClick={() => setToggle(true)}>Cancel</button>
+            <button type="button" onClick={() => setToggle(true)}>Cancel</button>
             <button type="submit">Add Expense</button>
           </div>
         </div>
